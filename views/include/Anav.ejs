@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="/admin"><b>Nacoss-Admin</b></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" href="/admin">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/admin/vote">Vote</a>
+        <a class="nav-link" href="/admin/create">Create</a>
+        <a class="nav-link" href="/admin/add">Add New</a>
+        <a class="nav-link" href="/admin/list">Users</a>
+        <% if(user){%>
+        <a class="nav-link" href="/admin/logout">Logout</a>
+        <%}%>
+      </div>
+    </div>
+  </nav>

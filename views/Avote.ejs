@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Vote || <%=data.title%></title>
+</head>
+<body>
+  <% include include/Anav%>
+  <div class="container">
+    <h2 style="text-align: left;"><%=data.title%></h2>
+    <% if(user){%>
+    <h2 style="text-align: right;"><%=user.name%></h2>
+    <%}else{%>
+      <h2 style="text-align: right;">GUEST</h2>
+      <h5 style="text-align: right;">Cant vote -- <a href="../../login"> login </a></h5>
+      <%}%>
+</div>
+  <p><%=data.message%> </p>
+    <hr><br><br>
+    <% var t = Date.parse(data.time)%>
+    <% var e = Date.parse(Date())%>
+
+    <table class="table table-bordered table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">option</th>
+            <th scope="col">Handler</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% var w = one %>
+          <% var x = two %>
+          <% var y = three %>
+          <% var z = four %>
+          <% var m = five %>
+          <% var n = six %>
+          <% var total =one + two + three + four + five + six%>
+
+          <% var w100 = Math.round(one * 100 / total)  %>
+          <% var x100 = Math.round(two * 100 / total) %>
+          <% var y100 = Math.round(three * 100 / total) %>
+          <% var z100 = Math.round(four * 100 / total) %>
+          <% var m100 = Math.round(five * 100 / total) %>
+          <% var n100 = Math.round(six * 100 / total) %>
+
+            <% var num = 1%>
+            <% var numl = num - 1%>
+            <%data.poll.forEach((value)=>{%>
+          <tr>
+            <th scope="row"><%= num %></th>
+            <td><%= value%></td>
+            <% if( e > t ){%> <td> Expired </td><%}else{%> 
+            <td><b>NOT ALLOWED</b></td> <%}%>
+          </tr>
+          <%num +=1%>
+          <%numl +=1%>
+          <%});%>
+        </tbody>
+      </table>
+<hr>
+<div class="contanier">
+  <h2 style="text-align: right;"> total number of vote = <%=total%></h2>
+  <% if(data.poll[0]){%>
+  <label for=""><%=data.poll[0]%></label>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: <%= w100%>%" aria-valuenow="<%= w100%>" aria-valuemin="0" aria-valuemax="100"><%= w100%></div>
+    </div>
+    <%}else{%>
+      <%}%>
+    <% if(data.poll[1]){%>
+    <label for=""><%=data.poll[1]%></label>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: <%= x100%>%" aria-valuenow="<%= x100%>" aria-valuemin="0" aria-valuemax="100"><%= x100%>%</div>
+    </div>
+    <%}else{%>
+      <%}%>
+    <% if(data.poll[2]){%>
+    <label for=""><%=data.poll[2]%></label>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: <%= y100%>%" aria-valuenow="<%= y100%>" aria-valuemin="0" aria-valuemax="100"><%= y100%>%</div>
+    </div>
+    <%}else{%>
+      <%}%>
+    <% if(data.poll[3]){%>
+    <label for=""><%=data.poll[3]%></label>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: <%= z100%>%" aria-valuenow="<%= z100%>" aria-valuemin="0" aria-valuemax="100"><%= z100%>%</div>
+    </div>
+    <%}else{%>
+      <%}%>
+    <% if(data.poll[4]){%>
+    <label for=""><%=data.poll[4]%></label>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: <%= m100%>%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><%= m100%>%</div>
+    </div>
+    <%}else{%>
+      <%}%>
+      <% if(data.poll[5]){%>
+        <label for=""><%=data.poll[5]%></label>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-dark" role="progressbar" style="width: <%= n100%>%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><%= n100%>%</div>
+        </div>
+        <%}else{%>
+          <%}%>
+  </div>
+<br><br>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</html>

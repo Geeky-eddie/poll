@@ -1,0 +1,12 @@
+// All file in this function handle sending out of mail 
+
+# Password.js 
+---------------------------------------
+
+# this handle looping through the users sending them 
+# thier password and login creation 
+
+## the mail function is been run in the server and would be deployed in block 
+
+## -- using router to break the shipping out of mail slowly 
+## this is the exported code 

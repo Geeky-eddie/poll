@@ -1,0 +1,110 @@
+Error: getaddrinfo ENOTFOUND mail.vunanacoss.com - cyrilogoh@gmail.com
+Error: connect ETIMEDOUT 164.160.128.105:465, - ,michaelyak66@gmail.com,
+Error: getaddrinfo ENOTFOUND smtp.gmail.com, - ,cyrilogoh@gmail.com,
+{"name":"yakubu michael mamman","email":"michaelyak66@gmail.com","username":"vug/csc/18/2520","password":"4wn6ewmk","_id":"Y1AG8tnNSjfJaY7F"}
+Error: queryA ETIMEOUT smtp.gmail.com, - ,gilberttirsel@gmail.com,
+Error: queryA ETIMEOUT smtp.gmail.com, - ,julietjonah8@gmail.com,
+// NOT resolved
+Error: connect ETIMEDOUT 173.194.76.109:465, - ,eghobamienvincent@gmail.com,
+Error: connect ETIMEDOUT 173.194.76.109:465, - ,noemail@vunanacoss.com,
+Error: connect ETIMEDOUT 173.194.76.109:465, - ,ekerevictor027@gmail.com,
+Error: connect ETIMEDOUT 173.194.76.109:465, - ,ephraimotene0@gmail.com,
+Error: connect ETIMEDOUT 173.194.76.109:465, - ,realbiz124@gmail.com,
+Error: connect ETIMEDOUT 173.194.76.109:465, - ,manassehezeocha@gmail.com,
+// Error
+Error: queryA ETIMEOUT smtp.gmail.com, - ,tortolough@gmail.com,
+// Error
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials l5sm23212114wrv.44 - gsmtp, - ,stephanieuchendu2@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials r16sm35906816wrx.36 - gsmtp, - ,chancelloto@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials v7sm32426497wma.26 - gsmtp, - ,ogbehmario@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials q4sm32246253wmc.2 - gsmtp, - ,favourohia500@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 125sm33788947wmc.27 - gsmtp, - ,orobosaighoosagie@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials m17sm36740119wrn.0 - gsmtp, - ,blessingnwogu128@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials a62sm36439543wmh.40 - gsmtp, - ,adoabiokoye433@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials s63sm36498000wms.18 - gsmtp, - ,nicholphil007@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials h9sm32299319wre.24 - gsmtp, - ,abdulazizisma46@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials h20sm36060920wrb.21 - gsmtp, - ,ruthotumajames@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials n189sm31866677wmf.20 - gsmtp, - ,kinseshako@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials w4sm11044042wmc.13 - gsmtp, - ,samuelabdu@rocketmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 89sm35606669wre.51 - gsmtp, - ,simnimyoms@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials m2sm31641450wml.34 - gsmtp, - ,nicholphil007@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials l1sm32663033wmi.15 - gsmtp, - ,blessingnwogu128@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials i8sm31995352wma.32 - gsmtp, - ,ogbehmario@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials w21sm15621870wmi.45 - gsmtp, - ,favourohia500@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials o7sm16954476wrw.62 - gsmtp, - ,ruthotumajames@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials z2sm33676502wml.23 - gsmtp, - ,orobosaighoosagie@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials d9sm32910004wrs.26 - gsmtp, - ,kinseshako@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials w189sm21471724wmg.31 - gsmtp, - ,adoabiokoye433@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials n189sm31877652wmf.20 - gsmtp, - ,stephanieuchendu2@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials m8sm33265403wmc.27 - gsmtp, - ,samuelabdu@rocketmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials e16sm37630507wra.94 - gsmtp, - ,simnimyoms@gmail.com,
+Error: connect ETIMEDOUT 173.194.76.109:465, - ,chancelloto@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials n3sm34583878wrw.61 - gsmtp, - ,abdulazizisma46@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials b10sm5655530wmj.5 - gsmtp, - ,chancelloto@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials m4sm31944394wmi.41 - gsmtp, - ,ruthotumajames@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials p9sm27348230wmm.17 - gsmtp, - ,favourohia500@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials b73sm40363547wmb.0 - gsmtp, - ,adoabiokoye433@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials h4sm8229238wrt.65 - gsmtp, - ,samuelabdu@rocketmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials n3sm34586197wrw.61 - gsmtp, - ,blessingnwogu128@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials 64sm33841500wmd.12 - gsmtp, - ,stephanieuchendu2@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials a12sm7569261wrh.71 - gsmtp, - ,orobosaighoosagie@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials o83sm32878926wme.21 - gsmtp, - ,ogbehmario@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials m2sm31647102wml.34 - gsmtp, - ,nicholphil007@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials k6sm32199083wmf.25 - gsmtp, - ,kinseshako@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials k18sm38019146wrd.45 - gsmtp, - ,abdulazizisma46@gmail.com,
+Error: Invalid login: 535-5.7.8 Username and Password not accepted. Learn more at
+535 5.7.8  https://support.google.com/mail/?p=BadCredentials y63sm15883847wmd.21 - gsmtp, - ,simnimyoms@gmail.com,
+/// next resolved
+Error: queryA ETIMEOUT smtp.gmail.com, - ,orunorichardeduvie@yahoo.com,
+Error: queryA ETIMEOUT smtp.gmail.com, - ,samueladekolu4@gmail.com,
+Error: queryA ETIMEOUT smtp.gmail.com, - ,carscantfly581@gmail.com,
+Error: queryA ETIMEOUT smtp.gmail.com, - ,millicentmbamah@gmail.com,
+Error: queryA ETIMEOUT smtp.gmail.com, - ,onucheojosamuel@gmail.com,
+Error: queryA ETIMEOUT smtp.gmail.com, - ,ebitimitabai9@gmail.com,
+Error: queryA ETIMEOUT smtp.gmail.com, - ,anembaben@gmail.com,
+Error: queryA ETIMEOUT smtp.gmail.com, - ,projectsemailaddress@gmail.com,
+// next resolved
+Error: Invalid login: 534-5.7.9 Please log in with your web browser and then try again. Learn more at
+534 5.7.9  https://support.google.com/mail/?p=WebLoginRequired u85sm31886106wmu.43 - gsmtp, - ,jeffreyokosi77@gmail.com,
+// next
+Error: queryA ETIMEOUT smtp.gmail.com, - ,abohsharon5@gmail.com,
+// next resolved
+Error: connect ETIMEDOUT 173.194.76.109:465, - ,marcelokielly@gmail.com,
+// 200 

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting</title>
+</head>
+<body onload="goback()">
+
+    <div class="container">
+        <h2 style="position:absolute;">Voting Completed</h2>
+    </div>
+    <script>
+        const goback = () => {
+            // window.history.back(2);
+            window.location.replace('http://localhost:3000/vote');
+        };
+    </script>
+</body>
+</html>

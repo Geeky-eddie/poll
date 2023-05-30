@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Vote || <%=data.title%></title>
+    <meta property="og:site_name" content="Veritas Nacoss Awards Night">
+    <link rel="icon" href="/logo.png" type="image" sizes="67x75">
+    <meta property="og:title" content="<%=data.title%>" />
+    <meta property="og:description" content="<%=data.message%>" />
+    <meta property="og:image" itemprop="image" content="/logo.png">
+    <meta property="og:type" content="website" />
+</head>
+<body>
+  <% include include/nav%>
+  <div class="container">
+    <h2 style="text-align: left;"><%=data.title%></h2>
+
+  <p class="text-center font-weight-bold"><%=data.message%> </p> 
+</div>
+    <hr><br><br>
+    <% var t = Date.parse(data.time)%>
+    <% var e = Date.parse(Date())%>
+
+    <table class="table table-bordered table-dark">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">option</th>
+            <th scope="col">Handler</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% var w = one %>
+          <% var x = two %>
+          <% var y = three %>
+          <% var z = four %>
+          <% var m = five %>
+          <% var n = six %>
+          <% var total =one + two + three + four + five + six%>
+
+          <% var w100 = Math.round(one * 100 / total)  %>
+          <% var x100 = Math.round(two * 100 / total) %>
+          <% var y100 = Math.round(three * 100 / total) %>
+          <% var z100 = Math.round(four * 100 / total) %>
+          <% var m100 = Math.round(five * 100 / total) %>
+          <% var n100 = Math.round(six * 100 / total) %>
+
+            <% var num = 1%>
+            <% var numl = num - 1%>
+            <%data.poll.forEach((value)=>{%>
+          <tr>
+            <th scope="row"><%= num %></th>
+            <td  class="text-uppercase"><b><%= value%></b></td>
+            <td> <a href="./<%= data._id %>/choice/<%= numl %>" class="btn btn-primary">Vote here</a> </td>
+          </tr>
+          <%num +=1%>
+          <%numl +=1%>
+          <%});%>
+        </tbody>
+      </table>
+<hr>
+<p><a class="btn btn-success" href="https://api.whatsapp.com/send?text=Vote%20For%20Me%20For%20The%20Position%20of%20<%=data.title%>%20%0A%0ANacoss%20Election%202020%0A%40%20https://www.vunanacoss.com/vote/<%= data._id %>/"> Share Link</a></p>
+<hr>
+<br><br>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</html>

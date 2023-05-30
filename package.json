@@ -1,0 +1,31 @@
+{
+  "name": "polls",
+  "version": "1.1.0",
+  "description": "A voting application ",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "polls",
+    "vote",
+    "express"
+  ],
+  "author": "Cyril Ogoh",
+  "license": "Unlicense",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "connect-ensure-login": "^0.1.1",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-session": "^1.16.1",
+    "morgan": "^1.9.1",
+    "nedb": "^1.8.0",
+    "nedb-session-store": "^1.1.2",
+    "nodemailer": "^6.4.16",
+    "nodemon": "^2.0.22",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  }
+}
