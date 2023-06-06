@@ -28,3 +28,15 @@ router.get('/vote/:id/choice/:vote', authChecker, voteChecker, controller.postVo
 
 
 module.exports = router;
+
+// exports.getLogout = function(req, res) {
+//   req.logout(function(err) {
+//     if (err) {
+//       console.error(err);
+//       return res.status(500).json({ error: 'Internal Server Error' });
+//     }
+//     // Successful logout
+//     res.redirect('/login');
+//   });
+// };
+

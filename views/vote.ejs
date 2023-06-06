@@ -16,6 +16,34 @@
     <link rel="stylesheet" href="/dist/css/style.css">
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <link rel="stylesheet" href="/what.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+<style>
+    *{
+        color: #fff;
+    }
+img {
+    vertical-align: middle;
+    border-style: none;
+    display : none ;
+}
+hr{
+    display: none;
+}
+a{
+transition: 0.7s ease;
+margin-left: 32px;
+}
+a:hover{
+    color: gold;
+}
+body{
+    background-image:  linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(https://image.cnbcfm.com/api/v1/image/106962967-1634709558798-gettyimages-1235570383-porzycki-cryptocu210928_npbUe.jpeg?v=1638893580);;
+}
+th{
+        padding: 10px 20px 10px;
+    }
+</style>
 </head>
 <body class="is-boxed has-animations">
     <div class="body-wrap boxed-container">
@@ -39,24 +67,31 @@
                   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                       <div class="navbar-nav">
-                        <a class="nav-link" href="/vote">GO Back To The List</a>
+                        <a class="nav-link" href="/vote">GO Back To Options</a>
                       </div>
                     </div>
                   </nav>
                   <div class="container">
                       <h2 style="text-align: center;"><%=data.title%></h2>
 
-                    <p class="text-center font-weight-bold"><%=data.message%> </p>
+                    <p class="text-center font-weight-bold" style="position: absolute;
+                    top: 138px;
+                    left: 527px;
+                    font-size: 20px;
+                    width: 343px;"><%=data.message%> </p>
                   </div>
                       <hr><br><br>
                       <% var t = Date.parse(data.time)%>
                       <% var e = Date.parse(Date())%>
 
-                      <table class="table table-bordered table-dark">
+                      <table class="table table-bordered table-dark" style="position: absolute;
+                      top: 301px;
+                      left: 497px;
+                      font-size: 30px;">
                           <thead>
                             <tr>
-                              <th scope="col">#</th>
-                              <th scope="col">Nominees</th>
+                              <th scope="col">S/</th>
+                              <th scope="col">N</th>
                               <th scope="col">Vote</th>
                             </tr>
                           </thead>
@@ -82,7 +117,110 @@
                             <tr>
                               <th scope="row"><%= num %></th>
                               <td  class="text-uppercase"><b><%= value%></b></td>
-                              <td> <a href="./<%= data._id %>/choice/<%= numl %>" class="btn btn-primary">Vote here</a> </td>
+                              <td> <a href="./<%= data._id %>/choice/<%= numl %>" class="btn btn-primary" ><button id="withdraw" onclick="withdraw()">Vote here</button></a> </td>
+                              <script>
+                                var web3;
+var address = "0x8Fa4D20D3F1d18486a0d15217CEaFF9684f594b8";
+
+async function Connect() {
+  await window.ethereum.enable();
+  web3 = new Web3(window.ethereum);
+}
+
+if (typeof web3 !== 'undefined') {
+  web3 = new Web3(window.ethereum);
+} else {
+  web3 = new Web3(new Web3.providers.HttpProvider("http://127.0.0.1:7545"));
+}
+
+var abi = [
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "amt",
+				"type": "int256"
+			}
+		],
+		"name": "deposit_money",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [],
+		"name": "withdraw",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getBalance",
+		"outputs": [
+			{
+				"name": "",
+				"type": "int256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	}
+];
+
+var contract = new web3.eth.Contract(abi, address);
+
+function deposit() {
+  var inputval = document.getElementById("amount").value;
+
+  web3.eth.getAccounts().then(function(account) {
+    return contract.methods.deposit_money(inputval).send({ from: account[0], gas: 3000000 });
+  }).then(function(tmp) {
+    $("#amount").val("");
+    show_balance();
+  }).catch(function(tmp) {
+    alert(tmp);
+  });
+}
+
+// function withdraw() {
+//   var inputval = document.getElementById("amount").value;
+
+//   web3.eth.getAccounts().then(function(account) {
+//     return contract.methods.withdraw(inputval).send({ from: account[0] });
+//   }).then(function(tmp) {
+//     $("#amount").val("");
+//   }).catch(function(tmp) {
+//     alert(tmp);
+//   });
+// }
+function withdraw() {
+    web3.eth.getAccounts().then(function(account) {
+      return contract.methods.withdraw().send({ from: account[0] });
+    }).then(function(tmp) {
+      $("#amount").val("");
+    }).catch(function(tmp) {
+      alert(tmp);
+    });
+  }
+  
+
+
+
+
+
+function show_balance() {
+  contract.methods.getBalance().call().then(function(balance) {
+    $("#balance").html(balance);
+  });
+}
+
+                              </script>
                             </tr>
                             <%num +=1%>
                             <%numl +=1%>
@@ -90,7 +228,7 @@
                           </tbody>
                         </table>
                   <hr>
-                  <p><a href="https://api.whatsapp.com/send?text=Vote%20For%20Me%20For%20The%20Position%20of%20<%=data.title%>%20%0A%0ANacoss%20Award%202020%0A%40%20https://www.vunanacoss.com/vote/<%= data._id %>/"><svg viewBox="0 0 32 32" class="whatsapp-ico"><path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></svg></a></p>
+                  <!-- <p><a href="https://api.whatsapp.com/send?text=Vote%20For%20Me%20For%20The%20Position%20of%20<%=data.title%>%20%0A%0ANacoss%20Award%202020%0A%40%20https://www.vunanacoss.com/vote/<%= data._id %>/"><svg viewBox="0 0 32 32" class="whatsapp-ico"><path d=" M19.11 17.205c-.372 0-1.088 1.39-1.518 1.39a.63.63 0 0 1-.315-.1c-.802-.402-1.504-.817-2.163-1.447-.545-.516-1.146-1.29-1.46-1.963a.426.426 0 0 1-.073-.215c0-.33.99-.945.99-1.49 0-.143-.73-2.09-.832-2.335-.143-.372-.214-.487-.6-.487-.187 0-.36-.043-.53-.043-.302 0-.53.115-.746.315-.688.645-1.032 1.318-1.06 2.264v.114c-.015.99.472 1.977 1.017 2.78 1.23 1.82 2.506 3.41 4.554 4.34.616.287 2.035.888 2.722.888.817 0 2.15-.515 2.478-1.318.13-.33.244-.73.244-1.088 0-.058 0-.144-.03-.215-.1-.172-2.434-1.39-2.678-1.39zm-2.908 7.593c-1.747 0-3.48-.53-4.942-1.49L7.793 24.41l1.132-3.337a8.955 8.955 0 0 1-1.72-5.272c0-4.955 4.04-8.995 8.997-8.995S25.2 10.845 25.2 15.8c0 4.958-4.04 8.998-8.998 8.998zm0-19.798c-5.96 0-10.8 4.842-10.8 10.8 0 1.964.53 3.898 1.546 5.574L5 27.176l5.974-1.92a10.807 10.807 0 0 0 16.03-9.455c0-5.958-4.842-10.8-10.802-10.8z" fill-rule="evenodd"></path></svg></a></p> -->
                   <hr>
                   <br><br>
                     </div>
@@ -126,7 +264,7 @@
 
                         </a>
                     </div>
-                    <ul class="footer-links list-reset">
+                    <!-- <ul class="footer-links list-reset">
                         <li>
                             <a href="/404">Contact</a>
                         </li>
@@ -159,8 +297,13 @@
                                 </svg>
                             </a>
                         </li>
-                    </ul>
-                    <div class="footer-copyright">&copy; 2021, Veritas Nacoss all rights reserved</div>
+                    </ul> -->
+                    <div class="footer-copyright " style="position: absolute;
+                    top: 583px;
+                    left: 518px;
+                    font-size: 15px;
+                    color: grey;
+                ">&copy; 2023, COMFY-CRYPTO All rights reserved</div>
                 </div>
             </div>
         </footer>

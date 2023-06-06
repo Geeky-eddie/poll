@@ -1,26 +1,26 @@
 App 3870076 output: running on port 3000
 App 3870485 output: running on port 3000
 App 3870630 output: running on port 3000
-App 3870630 output: romzy
-App 3870630 output: romzy
+App 3870630 output: comfy
+App 3870630 output: comfy
 App 4050312 output: running on port 3000
-App 4050312 output: romzy
-App 4050312 output: romzy
+App 4050312 output: comfy
+App 4050312 output: comfy
 App 140162 output: running on port 3000
 App 144273 output: running on port 3000
 App 151805 output: running on port 3000
-App 151805 output: romzy
+App 151805 output: comfy
 App 2631963 output: running on port 3000
 App 3221224 output: running on port 3000
 App 3221224 output: vug/csc/17/2031
 App 3221224 output: vug/csc/17/2031
 App 3221224 output: vug/csc/17/2031
-App 3221224 output: romzy
-App 3221224 output: romzy
-App 3221224 output: romzy
-App 3221224 output: romzy
-App 3221224 output: romzy
-App 3221224 output: romzy
+App 3221224 output: comfy
+App 3221224 output: comfy
+App 3221224 output: comfy
+App 3221224 output: comfy
+App 3221224 output: comfy
+App 3221224 output: comfy
 App 3221224 output: ReferenceError: /home/vunanaco/Polls/views/voted.ejs:14
 App 3221224 output:     12| <div class="container">
 App 3221224 output:     13| <h1>You Voted Already</h1>
@@ -40,14 +40,14 @@ App 3221224 output:     at ServerResponse.render (/home/vunanaco/nodevenv/Polls/
 App 3221224 output:     at /home/vunanaco/Polls/middleware/voteChecker.js:22:17
 App 3221224 output:     at newArguments.<computed> (/home/vunanaco/nodevenv/Polls/12/lib/node_modules/nedb/lib/executor.js:29:17)
 App 3270852 output: running on port 3000
-App 3270852 output: romzy
-App 3270852 output: romzy
+App 3270852 output: comfy
+App 3270852 output: comfy
 App 171985 output: running on port 3000
-App 171985 output: romzy
+App 171985 output: comfy
 App 236119 output: running on port 3000
 App 236119 output: vug/csc/17/2031
 App 463978 output: running on port 3000
-App 463978 output: romzy
+App 463978 output: comfy
 App 463978 output: vug/csc/18/2520
 App 463978 output: vug/csc/18/2520
 App 463978 output: vug/csc/18/2605
@@ -69,9 +69,9 @@ App 628911 output: running on port 3000
 App 628911 output: vug/csc/18/2548
 App 628911 output: vug/csc/18/2548
 App 715495 output: running on port 3000
-App 715495 output: romzy
+App 715495 output: comfy
 App 719717 output: running on port 3000
-App 719717 output: user009
+App 719717 output: use009
 App 719717 output: vug/csc/17/2011
 App 719717 output: vug/csc/17/2011
 App 719717 output: vug/csc/17/2011
@@ -472,10 +472,10 @@ App 1444445 output: vug/csc/17/2031
 App 1444445 output: vug/csc/17/2031
 App 1444445 output: vug/csc/17/2147
 App 1444445 output: vug/csc/17/2147
-App 1444445 output: romzy
+App 1444445 output: comfy
 App 1444445 output: vug/csc/17/2147
 App 1444445 output: vug/csc/17/2147
-App 1444445 output: romzy
+App 1444445 output: comfy
 App 1444445 output: vug/csc/18/2815
 App 1444445 output: vug/csc/17/2147
 App 1444445 output: vug/csc/18/2815
@@ -747,7 +747,7 @@ App 1444445 output: vug/csc/17/2119
 App 1444445 output: vug/csc/17/2168
 App 1444445 output: vug/csc/17/2168
 App 1444445 output: vug/csc/19/3343
-App 1444445 output: romzy
+App 1444445 output: comfy
 App 1444445 output: vug/csc/19/3343
 App 1444445 output: vug/csc/19/3343
 App 1444445 output: vug/csc/19/3343
@@ -952,7 +952,7 @@ App 1444445 output: vug/csc/20/3932
 App 1444445 output: vug/csc/17/2174
 App 1444445 output: vug/csc/18/2520
 App 1444445 output: vug/csc/18/2520
-App 1444445 output: romzy
+App 1444445 output: comfy
 App 1444445 output: vug/csc/17/1914
 App 1444445 output: vug/csc/17/1983
 App 1444445 output: vug/csc/20/3899
@@ -1068,7 +1068,7 @@ App 1444445 output: vug/csc/17/2307
 App 1444445 output: vug/csc/17/2335
 App 1444445 output: vug/csc/17/2335
 App 1444445 output: vug/csc/17/2307
-App 1444445 output: romzy
+App 1444445 output: comfy
 App 1444445 output: vug/csc/20/3967
 App 1444445 output: vug/csc/20/3866
 App 1444445 output: vug/csc/19/3574
@@ -1089,7 +1089,7 @@ App 1444445 output: vug/csc/19/3691
 App 1444445 output: vug/csc/19/3691
 App 1444445 output: vug/csc/19/3691
 App 1444445 output: vug/csc/15/1237
-App 1444445 output: romzy
+App 1444445 output: comfy
 App 1444445 output: vug/csc/18/2773
 App 1444445 output: vug/csc/18/2773
 App 1444445 output: vug/csc/18/2773

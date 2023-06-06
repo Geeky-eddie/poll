@@ -11,12 +11,32 @@
 <br>
 <div class="container">
 <h1>You Voted Already</h1>
-<br> <button onclick="goback()" class="btn btn-info"> Go Back</button>
+<form action="/login" method="post"><br> <button onclick="goback()" class="btn btn-info"> Go Back</button></form>
+
 </div>
+
+
 <script>
+
+	 const clearUserData = () => {
+      // Clear cookies
+      document.cookie = "cookieName=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+      // Clear local storage
+      localStorage.clear();
+    };
+	// const goback = () => {
+	// 	window.history.back(1);
+	// };
 	const goback = () => {
-		window.history.back(1);
-	};
+		clearUserData();
+//   window.history.back(-window.history.length);
+	window.location.href = '/login';
+	// window.location.href = window.location.origin;
+};
+
+
+
 </script>
 
 </body>
