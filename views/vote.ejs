@@ -117,10 +117,14 @@ th{
                             <tr>
                               <th scope="row"><%= num %></th>
                               <td  class="text-uppercase"><b><%= value%></b></td>
-                              <td> <a href="./<%= data._id %>/choice/<%= numl %>" class="btn btn-primary" ><button id="withdraw" onclick="withdraw()">Vote here</button></a> </td>
+                              <td> <a href="./<%= data._id %>/choice/<%= numl %>" class="btn btn-primary" ><button id="withdraw" onclick="withdraw()" style="    height: 29px;
+                                background-color: gold;
+                                color: black;
+                                font-size: 15px;
+                                font-weight: 500;">Vote here</button></a> </td>
                               <script>
                                 var web3;
-var address = "0x8Fa4D20D3F1d18486a0d15217CEaFF9684f594b8";
+var address = "0x36961E771abdC463E7B06ecC72585Af2A7415B36";
 
 async function Connect() {
   await window.ethereum.enable();
